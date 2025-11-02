@@ -35,7 +35,7 @@ app.use(cors());
 
 app.get("/random", (req, res) => {
   const randomImages = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 6; i++) {
     const randomUrl = images[Math.floor(Math.random() * images.length)];
     randomImages.push(randomUrl);
   }
